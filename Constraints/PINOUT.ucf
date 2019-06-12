@@ -1,0 +1,39 @@
+NET "CLK" LOC = "V10"; # 50 Mhz clock
+NET "RESET" LOC = "D9"; 
+
+# Input of the I/O gates of the parking
+NET "IR1" LOC = "T12";
+NET "IR2" LOC = "V12";
+
+# Input of the IR Sensors for the spaces of the parking lot
+NET "IR_IN<0>" LOC = "H3";
+NET "IR_IN<1>" LOC = "L7";
+NET "IR_IN<2>" LOC = "K6";
+
+# Output to the LEDs that represent the spaces available
+NET "LUGARES_DISP<0>" LOC = "T11";
+NET "LUGARES_DISP<1>" LOC = "R11";
+NET "LUGARES_DISP<2>" LOC = "N11";
+
+# Salida a display 7 segmentos
+# Output to the 7 segment displays
+NET "DISPLAY_OUT<0>" LOC = "T17";
+NET "DISPLAY_OUT<1>" LOC = "T18";
+NET "DISPLAY_OUT<2>" LOC = "U17";
+NET "DISPLAY_OUT<3>" LOC = "U18";
+NET "DISPLAY_OUT<4>" LOC = "M14";
+NET "DISPLAY_OUT<5>" LOC = "N14";
+NET "DISPLAY_OUT<6>" LOC = "L14";
+
+# Anodos comunes de cada bloque de 7 segmentos
+# Common anodes
+NET "DISPLAY_OUT<7>" LOC = "P17";
+NET "DISPLAY_OUT<8>" LOC = "P18";
+NET "DISPLAY_OUT<9>" LOC = "N15";
+NET "DISPLAY_OUT<10>" LOC = "N16";
+
+# Output to one motor (input parking lot gate)
+NET "SALIDA_MT<0>" LOC = "K2";
+NET "SALIDA_MT<1>" LOC = "K1";
+NET "SALIDA_MT<2>" LOC = "L4";
+NET "SALIDA_MT<3>" LOC = "L3";
